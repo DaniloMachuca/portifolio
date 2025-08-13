@@ -4,7 +4,6 @@ import disneyImg from '../assets/disney.png'
 import desenvolvimentoAutomotivoImg from '../assets/desenvolvimento-automotivo.png'
 import listaDeContatos from '../assets/lista-de-contatos.png'
 import eplay from '../assets/eplay.png'
-//
 
 export const projetos: Projetos[] = [
   {
