@@ -1,13 +1,18 @@
 import type { JSX } from 'react/jsx-runtime'
 import * as S from './styles'
 
-export type Props = {
+type Props = {
   size?: 'small' | 'big'
+  isBtn?: boolean
   children: JSX.Element | string
 }
 
-const Tag = ({ children, size = 'small' }: Props) => {
-  return <S.TagContainer size={size}>{children}</S.TagContainer>
+const Tag = ({ children, size = 'small', isBtn = false }: Props) => {
+  return (
+    <S.TagContainer $isBtn={isBtn} $size={size}>
+      {children}
+    </S.TagContainer>
+  )
 }
 
 export default Tag

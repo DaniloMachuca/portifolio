@@ -2,16 +2,37 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const Header = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 15%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
   background-color: ${colors.azul};
   color: ${colors.branco};
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid ${colors.branco};
+  }
 `
 
 export const List = styled.ul`
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 12px;
+  padding: 0;
+  align-items: center;
+
+  img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
+  }
 `

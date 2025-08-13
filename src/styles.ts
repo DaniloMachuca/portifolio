@@ -3,7 +3,8 @@ import { createGlobalStyle } from 'styled-components'
 export const colors = {
   azul: '#0162b7ff',
   branco: '#eef9faff',
-  cinza: '#9dccfbff'
+  cinza: '#9dccfbff',
+  azulEscuro: '#002a50ff'
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -18,5 +19,11 @@ export const GlobalStyle = createGlobalStyle`
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
   }
+
 `

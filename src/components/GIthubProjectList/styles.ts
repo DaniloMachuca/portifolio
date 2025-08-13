@@ -1,11 +1,20 @@
 import styled from 'styled-components'
 import { Title } from '../Title/styles'
 
+export const Container = styled.div`
+  padding: 10px 15px;
+  > ${Title} {
+    text-align: center;
+  }
+  overflow-x: hidden;
+`
+
 export const List = styled.ul`
-  list-style: none;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 36px;
+  row-gap: 40px;
+  list-style: none;
   padding: 0;
 
   @media (max-width: 768px) {
@@ -18,14 +27,5 @@ export const List = styled.ul`
     grid-template-columns: 1fr;
     row-gap: 16px;
     column-gap: 0;
-  }
-`
-
-export const Section = styled.section`
-  padding: 10px 15px;
-  overflow-x: hidden;
-
-  ${Title} {
-    text-align: center;
   }
 `

@@ -10,12 +10,19 @@ export const Container = styled.div`
   padding: 34px 0px;
 
   img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid ${colors.azul};
   }
 
   h1 {
     font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 14px;
+    font-weight: normal;
   }
 `

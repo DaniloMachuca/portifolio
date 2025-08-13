@@ -1,19 +1,16 @@
+import * as S from './styles'
 import ProjectCard from '../ProjectCard'
 import Projetos from '../../models/Projetos'
-import * as S from './styles'
-
-import 'aos/dist/aos.css'
-import AOS from 'aos'
+import Title from '../Title'
 
 type Props = {
   projetos: Projetos[]
 }
 
 const ProjectList = ({ projetos }: Props) => {
-  AOS.init()
   return (
     <S.Section className="container" data-aos="fade-up">
-      <h2>Meus Projetos</h2>
+      <Title fontSize={24}>Meus Projetos</Title>
       <S.List>
         {projetos.map((p) => (
           <ProjectCard

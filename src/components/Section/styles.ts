@@ -27,13 +27,27 @@ export const Content = styled.div<Omit<Props, '$cor'>>`
   margin: 0 auto;
   justify-content: space-between;
   padding-bottom: 5%;
+  overflow: hidden;
 
   div {
     max-width: 40%;
-    font-size: 1.1rem;
+
+    p {
+      font-size: 16px;
+    }
   }
 
   img {
     max-width: 40%;
+  }
+
+  @media (max-width: 425px) {
+    flex-direction: column;
+    img {
+      max-width: 100%;
+    }
+    div {
+      max-width: 100%;
+    }
   }
 `

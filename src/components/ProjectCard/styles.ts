@@ -11,15 +11,18 @@ export const CardContainer = styled.li`
   }
   position: relative;
   background-color: ${colors.branco};
+
+  align-items: center;
+  text-align: center;
+
+  > ${TagContainer} {
+    width: 100%;
+    padding: 8px 0;
+  }
 `
 
 export const TextContainer = styled.div`
   padding: 8px;
-
-  a {
-    color: ${colors.branco};
-    text-decoration: none;
-  }
 `
 export const Nota = styled.div`
   display: flex;

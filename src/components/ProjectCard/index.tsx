@@ -1,5 +1,6 @@
 import Tag from '../Tag'
 import * as S from './styles'
+import Title from '../Title'
 
 type Props = {
   image: string
@@ -19,12 +20,12 @@ const ProjectCard = ({ image, title, description, link, infos }: Props) => {
         ))}
       </S.Infos>
       <S.TextContainer>
-        <h3>{title}</h3>
+        <Title fontSize={18}>{title}</Title>
         <S.Description>{description}</S.Description>
-        <Tag size="big">
-          <a href={link}>Acessar Projeto</a>
-        </Tag>
       </S.TextContainer>
+      <Tag isBtn size="big">
+        <a href={link}>Acessar Projeto</a>
+      </Tag>
     </S.CardContainer>
   )
 }

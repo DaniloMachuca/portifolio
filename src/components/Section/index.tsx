@@ -1,8 +1,5 @@
-import { useEffect, type JSX } from 'react'
+import { type JSX } from 'react'
 import * as S from './styles'
-
-import 'aos/dist/aos.css'
-import AOS from 'aos'
 
 export type Props = {
   children: JSX.Element
@@ -12,10 +9,6 @@ export type Props = {
 }
 
 const Section = ({ img, children, cor = 'branca', direcaoDoTexto }: Props) => {
-  useEffect(() => {
-    AOS.init()
-  }, [])
-
   function directionCheck() {
     if (direcaoDoTexto === 'esquerda') {
       return 'fade-left'
