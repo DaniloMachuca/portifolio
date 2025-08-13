@@ -13,14 +13,18 @@ type Props = {
 const ProjectCard = ({ image, title, description, link, infos }: Props) => {
   return (
     <S.CardContainer>
-      <img src={image} alt={title} />
-      <S.Infos>
-        {infos.map((info) => (
-          <Tag key={info}>{info}</Tag>
-        ))}
-      </S.Infos>
-      <S.TextContainer>
+      <S.CardHeader>
+        <div>
+          <img src={image} alt={title} />
+          <S.Infos>
+            {infos.map((info) => (
+              <Tag key={info}>{info}</Tag>
+            ))}
+          </S.Infos>
+        </div>
         <Title fontSize={18}>{title}</Title>
+      </S.CardHeader>
+      <S.TextContainer>
         <S.Description>{description}</S.Description>
       </S.TextContainer>
       <Tag isBtn size="big">

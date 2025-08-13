@@ -18,19 +18,18 @@ export const Section = styled.section<Omit<Props, 'direcaoDoTexto'>>`
   );
 `
 export const Content = styled.div<Omit<Props, '$cor'>>`
-  max-width: 1200px;
+  max-width: 1024px;
   display: flex;
   flex-direction: ${({ $direcaoDoTexto }) =>
     $direcaoDoTexto === 'esquerda' ? 'row-reverse' : 'row'};
   align-items: center;
-  gap: 1rem;
   margin: 0 auto;
   justify-content: space-between;
   padding-bottom: 5%;
   overflow: hidden;
 
   div {
-    max-width: 40%;
+    max-width: 50%;
 
     p {
       font-size: 16px;
@@ -38,7 +37,7 @@ export const Content = styled.div<Omit<Props, '$cor'>>`
   }
 
   img {
-    max-width: 40%;
+    max-width: 35%;
   }
 
   @media (max-width: 425px) {

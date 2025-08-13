@@ -34,5 +34,12 @@ export const List = styled.ul`
     width: 40px;
     height: 40px;
     filter: invert(1);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      filter: invert(0);
+      transition: all 0.2s ease-in-out;
+    }
   }
 `

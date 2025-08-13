@@ -8,6 +8,7 @@ export const Container = styled.div`
   background-color: ${colors.cinza};
   background-image: linear-gradient(${colors.cinza} 80%, ${colors.branco} 100%);
   padding: 34px 0px;
+  padding-bottom: 100px;
 
   img {
     width: 200px;

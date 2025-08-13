@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import { Title } from '../Title/styles'
+import { colors } from '../../styles'
 
 export const Container = styled.div`
-  padding: 10px 15px;
+  padding: 0px 15px 32px 15px;
   > ${Title} {
     text-align: center;
   }
@@ -28,4 +29,7 @@ export const List = styled.ul`
     row-gap: 16px;
     column-gap: 0;
   }
+`
+export const Cor = styled.div`
+  background-image: linear-gradient(${colors.cinza} 90%);
 `

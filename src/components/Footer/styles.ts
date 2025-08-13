@@ -29,6 +29,10 @@ export const SocialMedias = styled.ul`
       width: 40px;
       height: 40px;
       filter: invert(1);
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 `

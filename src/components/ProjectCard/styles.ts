@@ -3,25 +3,32 @@ import { colors } from '../../styles'
 import { TagContainer } from '../Tag/styles'
 
 export const CardContainer = styled.li`
-  display: flex-box;
+  display: flex;
   flex-direction: column;
   border: 1px solid ${colors.azul};
-  > img {
+
+  img {
     width: 100%;
+    height: 300px;
+    border-bottom: 1px solid ${colors.azul};
+    object-fit: cover;
   }
-  position: relative;
+
   background-color: ${colors.branco};
 
   align-items: center;
   text-align: center;
-
   > ${TagContainer} {
     width: 100%;
     padding: 8px 0;
   }
+  justify-content: space-between;
 `
 
 export const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 8px;
 `
 export const Nota = styled.div`
@@ -31,10 +38,11 @@ export const Nota = styled.div`
 `
 
 export const CardHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  font-size: 18px;
-  text-align: center;
+  border-bottom: 1px solid ${colors.azul};
+
+  > div {
+    position: relative;
+  }
 `
 export const Description = styled.p`
   font-size: 14px;
@@ -43,10 +51,12 @@ export const Description = styled.p`
 `
 export const Infos = styled.div`
   position: absolute;
-  top: 8px;
+  text-align: left;
+  bottom: 8px;
   left: 8px;
 
   ${TagContainer} {
+    margin-bottom: 8px;
     margin-right: 8px;
   }
 `

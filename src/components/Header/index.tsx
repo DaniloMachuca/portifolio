@@ -1,12 +1,13 @@
 import * as S from './styles'
 import github from '../../assets/github.svg'
 import linkedin from '../../assets/linkedin.svg'
+import Logo from '../Logo'
 
 const Header = () => {
   return (
     <S.Header>
       <div className="container">
-        <h1>DM.dev</h1>
+        <Logo />
         <S.List>
           <li>
             <a href="https://github.com/DaniloMachuca">

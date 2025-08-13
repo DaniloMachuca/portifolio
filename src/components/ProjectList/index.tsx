@@ -9,21 +9,23 @@ type Props = {
 
 const ProjectList = ({ projetos }: Props) => {
   return (
-    <S.Section className="container" data-aos="fade-up">
-      <Title fontSize={24}>Meus Projetos</Title>
-      <S.List>
-        {projetos.map((p) => (
-          <ProjectCard
-            key={p.id}
-            description={p.description}
-            link={p.link}
-            image={p.image}
-            title={p.title}
-            infos={p.infos}
-          />
-        ))}
-      </S.List>
-    </S.Section>
+    <S.Cor>
+      <S.Section className="container" data-aos="fade-up">
+        <Title fontSize={24}>Meus Projetos</Title>
+        <S.List>
+          {projetos.map((p) => (
+            <ProjectCard
+              key={p.id}
+              description={p.description}
+              link={p.link}
+              image={p.image}
+              title={p.title}
+              infos={p.infos}
+            />
+          ))}
+        </S.List>
+      </S.Section>
+    </S.Cor>
   )
 }
 

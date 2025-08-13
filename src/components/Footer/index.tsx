@@ -1,6 +1,5 @@
 import * as S from './styles'
 import github from '../../assets/github.svg'
-import gmail from '../../assets/gmail.svg'
 import linkedin from '../../assets/linkedin.svg'
 
 const Footer = () => {
@@ -9,16 +8,19 @@ const Footer = () => {
       <div className="container">
         <S.SocialMedias>
           <li>
-            <img src={github} alt="github" />
+            <a href="https://github.com/DaniloMachuca">
+              <img src={github} alt="github" />
+            </a>
           </li>
           <li>
-            <img src={gmail} alt="gmail" />
-          </li>
-          <li>
-            <img src={linkedin} alt="linkedin" />
+            <a href="https://www.linkedin.com/in/danilo-machuca-de-souza/">
+              <img src={linkedin} alt="linkedin" />
+            </a>
           </li>
         </S.SocialMedias>
         <S.TitleStyled>Desenvolvido por Danilo Machuca</S.TitleStyled>
+        <S.TitleStyled>danilo.machuca.dev@gmail.com</S.TitleStyled>
+        <S.TitleStyled>(12) 99650-2006</S.TitleStyled>
         <S.Description>
           Obrigado pela visita! Como desenvolvedor frontend, meu objetivo é
           construir experiências de usuário intuitivas e eficientes. Se você

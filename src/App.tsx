@@ -16,22 +16,20 @@ import GithubProjectList from './components/GIthubProjectList'
 import Footer from './components/Footer'
 import Title from './components/Title'
 
+//imagens da seção
+import sobreImg from './assets/sobre-mim.png'
+import trabalhoImg from './assets/trabalho.png'
+
 function App() {
   const isSmallScreen = useMediaQuery('(max-width: 768px)')
   isSmallScreen ? Aos.init({ disable: true }) : Aos.init()
-
-  //idiotice
-  const playceholder =
-    'https://media.discordapp.net/attachments/1279240121597820982/1403589697661435984/874.png?ex=689b6605&is=689a1485&hm=4cea6cc794a8a89cb59640187eacabeeec222f222e70a62e63010a8f1c097b76&=&format=webp&quality=lossless'
-  const playceholder2 =
-    'https://i.pinimg.com/1200x/bd/cb/3f/bdcb3f389881a33dcfd785716cc61c67.jpg'
 
   return (
     <>
       <GlobalStyle />
       <Header />
       <Perfil />
-      <Section cor="cinza" img={playceholder}>
+      <Section cor="cinza" img={sobreImg}>
         <>
           <Title fontSize={24}>Sobre</Title>
           <p>
@@ -44,7 +42,7 @@ function App() {
           </p>
         </>
       </Section>
-      <Section cor="branca" img={playceholder2} direcaoDoTexto="esquerda">
+      <Section cor="branca" img={trabalhoImg} direcaoDoTexto="esquerda">
         <>
           <Title fontSize={24}>Como eu Trabalho</Title>
           <p>

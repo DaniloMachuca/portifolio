@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Title } from '../Title/styles'
+import { colors } from '../../styles'
 
 export const List = styled.ul`
   list-style: none;
@@ -28,4 +29,9 @@ export const Section = styled.section`
   ${Title} {
     text-align: center;
   }
+`
+
+export const Cor = styled.div`
+  background-image: linear-gradient(${colors.branco} 95%, ${colors.cinza} 100%);
+  padding-bottom: 140px;
 `
