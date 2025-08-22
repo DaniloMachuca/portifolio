@@ -48,7 +48,7 @@ export const projetos: Projetos[] = [
     description:
       'Eplay é um e-commerce fictício desenvolvido com React, TypeScript e React Router DOM. O projeto possui múltiplas páginas, incluindo listagem de produtos, detalhes individuais e carrinho de compras, com integração a uma API fictícia para simular dados dinâmicos. Utiliza Styled Components para estilização modular e aplica boas práticas de front-end, como organização de componentes, gerenciamento de estado e consumo de APIs, sendo criado como um projeto de treino para aprimorar habilidades em desenvolvimento web moderno.',
     image: eplay,
-    link: '',
+    link: 'https://eplay-v1.vercel.app/',
     infos: [
       'React',
       'TypeScript',
