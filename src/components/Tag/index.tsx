@@ -5,11 +5,12 @@ type Props = {
   size?: 'small' | 'big'
   isBtn?: boolean
   children: JSX.Element | string
+  onClick?: () => void
 }
 
-const Tag = ({ children, size = 'small', isBtn = false }: Props) => {
+const Tag = ({ children, size = 'small', isBtn = false, onClick }: Props) => {
   return (
-    <S.TagContainer $isBtn={isBtn} $size={size}>
+    <S.TagContainer onClick={onClick} $isBtn={isBtn} $size={size}>
       {children}
     </S.TagContainer>
   )

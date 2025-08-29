@@ -27,8 +27,8 @@ const ProjectCard = ({ image, title, description, link, infos }: Props) => {
       <S.TextContainer>
         <S.Description>{description}</S.Description>
       </S.TextContainer>
-      <Tag isBtn size="big">
-        <a href={link}>Acessar Projeto</a>
+      <Tag isBtn size="big" onClick={() => window.open(link, '_blank')}>
+        <a>Acessar Projeto</a>
       </Tag>
     </S.CardContainer>
   )
