@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 
 import Title from '../Title'
-
-import { List, Container, Cor } from './styles'
 import GithubProject from '../GithubProjectCard'
+import { List, Container, Color } from './styles'
 
 const GithubProjectList = () => {
   const [repos, setRepos] = useState([])
@@ -17,7 +16,7 @@ const GithubProjectList = () => {
   }, [])
 
   return (
-    <Cor>
+    <Color>
       <Container className="container" data-aos="fade-up">
         <Title fontSize={24}>Repositórios do Github</Title>
         <List>
@@ -28,7 +27,7 @@ const GithubProjectList = () => {
           ))}
         </List>
       </Container>
-    </Cor>
+    </Color>
   )
 }
 

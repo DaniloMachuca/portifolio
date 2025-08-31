@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const colors = {
-  azul: '#0162b7ff',
-  branco: '#eef9faff',
-  cinza: '#9dccfbff',
-  azulEscuro: '#002a50ff'
+  blue: '#0162b7ff',
+  white: '#eef9faff',
+  lightBlue: '#9dccfbff',
+  darkBlue: '#002a50ff'
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color: ${colors.branco};
+    background-color: ${colors.white};
   }
 
   .container {

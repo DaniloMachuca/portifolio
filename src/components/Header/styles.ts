@@ -12,14 +12,14 @@ export const Header = styled.header`
       justify-content: center;
     }
   }
-  background-color: ${colors.azul};
-  color: ${colors.branco};
+  background-color: ${colors.blue};
+  color: ${colors.white};
 
   h1 {
     font-size: 32px;
     font-weight: bold;
     padding: 8px;
-    border: 1px solid ${colors.branco};
+    border: 1px solid ${colors.white};
   }
 `
 

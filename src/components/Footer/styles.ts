@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const TitleStyled = styled.p`
-  color: ${colors.branco};
+  color: ${colors.white};
   font-size: 12px;
   margin-top: 20px;
 `
@@ -10,7 +10,7 @@ export const TitleStyled = styled.p`
 export const Footer = styled.footer`
   padding: 20px 15px;
   text-align: center;
-  background-color: ${colors.azul};
+  background-color: ${colors.blue};
   display: flex;
   flex-direction: column;
 `
@@ -38,7 +38,7 @@ export const SocialMedias = styled.ul`
 `
 
 export const Description = styled.p`
-  color: ${colors.cinza};
+  color: ${colors.lightBlue};
   margin: 0 auto;
   margin-top: 20px;
   text-align: center;

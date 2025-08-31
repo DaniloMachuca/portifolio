@@ -32,6 +32,9 @@ export const Section = styled.section`
 `
 
 export const Cor = styled.div`
-  background-image: linear-gradient(${colors.branco} 95%, ${colors.cinza} 100%);
+  background-image: linear-gradient(
+    ${colors.white} 95%,
+    ${colors.lightBlue} 100%
+  );
   padding-bottom: 140px;
 `

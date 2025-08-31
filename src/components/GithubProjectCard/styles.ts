@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 export const Card = styled.div`
-  border: 1px solid ${colors.azul};
+  border: 1px solid ${colors.blue};
   padding: 16px;
 `
 

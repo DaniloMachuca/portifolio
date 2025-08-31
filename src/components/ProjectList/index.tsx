@@ -1,19 +1,19 @@
-import * as S from './styles'
 import ProjectCard from '../ProjectCard'
-import Projetos from '../../models/Projetos'
+import Projects from '../../models/Projects'
 import Title from '../Title'
+import * as S from './styles'
 
 type Props = {
-  projetos: Projetos[]
+  projects: Projects[]
 }
 
-const ProjectList = ({ projetos }: Props) => {
+const ProjectList = ({ projects }: Props) => {
   return (
     <S.Cor>
       <S.Section className="container" data-aos="fade-up">
         <Title fontSize={24}>Meus Projetos</Title>
         <S.List>
-          {projetos.map((p) => (
+          {projects.map((p) => (
             <ProjectCard
               key={p.id}
               description={p.description}

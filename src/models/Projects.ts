@@ -1,4 +1,4 @@
-class Projetos {
+class Projects {
   title: string
   description: string
   image: string
@@ -23,4 +23,4 @@ class Projetos {
   }
 }
 
-export default Projetos
+export default Projects

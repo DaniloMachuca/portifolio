@@ -4,13 +4,13 @@ import * as S from './styles'
 export type Props = {
   children: JSX.Element
   img: string
-  cor?: 'cinza' | 'branca'
-  direcaoDoTexto?: 'direita' | 'esquerda'
+  color?: 'lightBlue' | 'white'
+  textDirection?: 'right' | 'left'
 }
 
-const Section = ({ img, children, cor = 'branca', direcaoDoTexto }: Props) => {
+const Section = ({ img, children, color = 'white', textDirection }: Props) => {
   function directionCheck() {
-    if (direcaoDoTexto === 'esquerda') {
+    if (textDirection === 'left') {
       return 'fade-left'
     } else {
       return 'fade-right'
@@ -18,8 +18,8 @@ const Section = ({ img, children, cor = 'branca', direcaoDoTexto }: Props) => {
   }
 
   return (
-    <S.Section $cor={cor}>
-      <S.Content $direcaoDoTexto={direcaoDoTexto} data-aos={directionCheck()}>
+    <S.Section $color={color}>
+      <S.Content $textDirection={textDirection} data-aos={directionCheck()}>
         <img src={img} alt={img} />
         <div>{children}</div>
       </S.Content>

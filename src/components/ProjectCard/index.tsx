@@ -1,6 +1,6 @@
 import Tag from '../Tag'
-import * as S from './styles'
 import Title from '../Title'
+import * as S from './styles'
 
 type Props = {
   image: string

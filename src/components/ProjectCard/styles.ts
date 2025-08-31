@@ -5,16 +5,16 @@ import { TagContainer } from '../Tag/styles'
 export const CardContainer = styled.li`
   display: flex;
   flex-direction: column;
-  border: 1px solid ${colors.azul};
+  border: 1px solid ${colors.blue};
 
   img {
     width: 100%;
     height: 300px;
-    border-bottom: 1px solid ${colors.azul};
+    border-bottom: 1px solid ${colors.blue};
     object-fit: cover;
   }
 
-  background-color: ${colors.branco};
+  background-color: ${colors.white};
 
   align-items: center;
   text-align: center;
@@ -38,7 +38,7 @@ export const Nota = styled.div`
 `
 
 export const CardHeader = styled.div`
-  border-bottom: 1px solid ${colors.azul};
+  border-bottom: 1px solid ${colors.blue};
 
   > div {
     position: relative;

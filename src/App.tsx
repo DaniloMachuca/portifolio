@@ -1,5 +1,5 @@
 //utilitários
-import { projetos } from './utils/projetos'
+import { projects } from './utils/projects'
 import useMediaQuery from './utils/MediaQuery'
 
 //estilos
@@ -9,7 +9,7 @@ import 'aos/dist/aos.css'
 
 //componentes
 import Header from './components/Header'
-import Perfil from './components/Perfil'
+import Profile from './components/Profile'
 import Section from './components/Section'
 import ProjectList from './components/ProjectList'
 import GithubProjectList from './components/GIthubProjectList'
@@ -17,8 +17,8 @@ import Footer from './components/Footer'
 import Title from './components/Title'
 
 //imagens da seção
-import sobreImg from './assets/sobre-mim.png'
-import trabalhoImg from './assets/trabalho.png'
+import aboutImg from './assets/sobre-mim.png'
+import workFlowImg from './assets/trabalho.png'
 
 function App() {
   const isSmallScreen = useMediaQuery('(max-width: 768px)')
@@ -28,8 +28,8 @@ function App() {
     <>
       <GlobalStyle />
       <Header />
-      <Perfil />
-      <Section cor="cinza" img={sobreImg}>
+      <Profile />
+      <Section color="white" img={aboutImg}>
         <>
           <Title fontSize={24}>Sobre</Title>
           <p>
@@ -42,7 +42,7 @@ function App() {
           </p>
         </>
       </Section>
-      <Section cor="branca" img={trabalhoImg} direcaoDoTexto="esquerda">
+      <Section color="lightBlue" img={workFlowImg} textDirection="left">
         <>
           <Title fontSize={24}>Como eu Trabalho</Title>
           <p>
@@ -54,7 +54,7 @@ function App() {
           </p>
         </>
       </Section>
-      <ProjectList projetos={projetos} />
+      <ProjectList projects={projects} />
       <GithubProjectList />
       <Footer />
     </>

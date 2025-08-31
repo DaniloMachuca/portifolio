@@ -2,26 +2,26 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 
 type Props = {
-  $cor: 'cinza' | 'branca'
-  $direcaoDoTexto?: 'direita' | 'esquerda'
+  $color: 'lightBlue' | 'white'
+  $textDirection?: 'right' | 'left'
 }
 
-export const Section = styled.section<Omit<Props, 'direcaoDoTexto'>>`
+export const Section = styled.section<Omit<Props, 'textDirection'>>`
   padding: 10px 15px;
-  background-color: ${({ $cor }) =>
-    $cor === 'cinza' ? colors.cinza : colors.branco};
+  background-color: ${({ $color }) =>
+    $color === 'lightBlue' ? colors.lightBlue : colors.white};
   background-image: linear-gradient(
-    ${({ $cor }) =>
-      $cor === 'cinza'
-        ? `${colors.branco} 90%, ${colors.cinza} 100%`
-        : `${colors.cinza} 90%, ${colors.branco} 100%`}
+    ${({ $color }) =>
+      $color === 'white'
+        ? `${colors.white} 90%, ${colors.lightBlue} 100%`
+        : `${colors.lightBlue} 90%, ${colors.white} 100%`}
   );
 `
-export const Content = styled.div<Omit<Props, '$cor'>>`
+export const Content = styled.div<Omit<Props, '$color'>>`
   max-width: 1024px;
   display: flex;
-  flex-direction: ${({ $direcaoDoTexto }) =>
-    $direcaoDoTexto === 'esquerda' ? 'row-reverse' : 'row'};
+  flex-direction: ${({ $textDirection }) =>
+    $textDirection === 'left' ? 'row-reverse' : 'row'};
   align-items: center;
   margin: 0 auto;
   justify-content: space-between;

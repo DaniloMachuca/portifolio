@@ -30,6 +30,6 @@ export const List = styled.ul`
     column-gap: 0;
   }
 `
-export const Cor = styled.div`
-  background-image: linear-gradient(${colors.cinza} 90%);
+export const Color = styled.div`
+  background-image: linear-gradient(${colors.lightBlue} 90%);
 `
