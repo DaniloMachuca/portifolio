@@ -33,12 +33,13 @@ function App() {
         <>
           <Title fontSize={24}>Sobre</Title>
           <p>
-            Olá. Meu nome é Danilo Machuca, sou desenvolvedor Full-Stack em
-            formação em Ciência da Computação pela UNIP. Trabalho com HTML, CSS,
-            JavaScript, React, TypeScript, NextJS, Go, Python, Node, C e C++,
-            transformando ideias em experiências digitais funcionais e
-            convenientes. Meu objetivo é unir criatividade e código para
-            entregar soluções que realmente façam diferença.
+            Olá, meu nome é Danilo Machuca. Sou desenvolvedor Full-Stack e
+            estudante de Ciência da Computação na UNIP. Tenho conhecimento em
+            HTML, CSS, JavaScript, React, TypeScript, Next.js, Python, C e C++,
+            o que me permite atuar em diferentes camadas de uma aplicação. Gosto
+            de explorar novas tecnologias e ampliar constantemente meu
+            repertório técnico, com interesse em criar soluções completas e
+            eficientes para diferentes tipos de projeto.
           </p>
         </>
       </Section>
