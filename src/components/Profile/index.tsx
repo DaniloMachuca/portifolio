@@ -6,7 +6,10 @@ const Profile = () => {
     <S.Container>
       <img src={profilePic} alt="Danilo Machuca" />
       <h1>Danilo Machuca</h1>
-      <h4>Desenvolvedor Front-End | HTML/CSS/JS, React, TypeScript, Sass</h4>
+      <h4>
+        Desenvolvedor Full-Stack | HTML/CSS/JS, React, TypeScript, Go, Python e
+        Node
+      </h4>
     </S.Container>
   )
 }
