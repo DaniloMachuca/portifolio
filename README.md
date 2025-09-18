@@ -1,69 +1,61 @@
-# React + TypeScript + Vite
+# 🌐 Meu Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um site de portfólio simples desenvolvido para apresentar quem sou, como trabalho e alguns dos meus projetos.
+O objetivo é centralizar minhas informações profissionais e oferecer uma forma prática de visualizar meu trabalho.
 
-Currently, two official plugins are available:
+## 📌 Estrutura do Site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O site é dividido em **quatro seções principais**:
 
-## Expanding the ESLint configuration
+1. **Sobre Mim**
+   Apresento minha formação e minhas stacks, destacando meu perfil como desenvolvedor Full-Stack.
+   **Exemplo de texto:**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+   > Olá, meu nome é Danilo Machuca. Sou desenvolvedor Full-Stack e estudante de Ciência da Computação na UNIP.
+   > Tenho conhecimento em HTML, CSS, JavaScript, React, TypeScript, Next.js, Go, Python, Node, C e C++, o que me permite atuar em diferentes camadas de uma aplicação.
+   > Estou sempre explorando novas tecnologias para ampliar meu repertório técnico e criar soluções completas e eficientes.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. **Como Eu Trabalho**
+   Explico meu estilo de desenvolvimento e minhas prioridades ao criar aplicações.
+   **Exemplo de texto:**
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+   > Priorizo performance, acessibilidade e código limpo em cada projeto.
+   > Trabalho com integração e consumo de APIs REST, organização de código escalável e testes automatizados para garantir estabilidade.
+   > Busco sempre entregar aplicações funcionais, eficientes e intuitivas para o usuário final.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Projetos em Destaque**
+   Exibo os meus projetos principais, cada um com:
+   - Nome
+   - Descrição breve
+   - Tecnologias utilizadas
+   - Link para deploy
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4. **Outros Projetos**
+   Lista de projetos menores ou experimentais para mostrar variedade e aprendizado contínuo. Ligada com a api do github para mostrar meus repositórios
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tecnologias Utilizadas
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Linguagem:** TypeScript
+- **Framework:** React (projeto criado com vite)
+- **Estilização:** Styled Components
+- **Deploy:** Vercel
+
+## 🎯 Objetivo
+
+Este portfólio foi criado para apresentar de forma clara e objetiva minhas habilidades, meu modo de trabalho e meus projetos, servindo como cartão de visitas para recrutadores, clientes ou parceiros de projeto.
+
+## 📂 Como Executar Localmente
+
+```bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/seu-portfolio.git
+
+# Entrar na pasta do projeto
+cd seu-portfolio
+
+# Instalar dependências
+npm install
+
+# Rodar o projeto
+npm run dev
 ```
