@@ -47,11 +47,11 @@ function App() {
         <>
           <Title fontSize={24}>Como eu Trabalho</Title>
           <p>
-            Como desenvolvedor full stack, priorizo performance, acessibilidade
-            e código limpo em todas as camadas da aplicação. Desenvolvo e
-            integro APIs, aplico boas práticas de arquitetura e manutenção de
-            software e utilizo testes automatizados com Jest e Cypress para
-            garantir estabilidade e confiabilidade. Meu foco é entregar soluções
+            Como desenvolvedor, priorizo performance, acessibilidade e código
+            limpo em todas as camadas da aplicação. Desenvolvo e integro APIs,
+            aplico boas práticas de arquitetura e manutenção de software e
+            utilizo testes automatizados com Jest e Cypress para garantir
+            estabilidade e confiabilidade. Meu foco é entregar soluções
             completas, eficientes para o cliente e com uma experiência agradável
             para o usuário final.
           </p>
