@@ -33,13 +33,13 @@ function App() {
         <>
           <Title fontSize={24}>Sobre</Title>
           <p>
-            Olá, meu nome é Danilo Machuca. Sou desenvolvedor Full-Stack e
-            estudante de Ciência da Computação na UNIP. Tenho conhecimento em
-            HTML, CSS, JavaScript, React, TypeScript, Next.js, Python, C e C++,
-            o que me permite atuar em diferentes camadas de uma aplicação. Gosto
-            de explorar novas tecnologias e ampliar constantemente meu
-            repertório técnico, com interesse em criar soluções completas e
-            eficientes para diferentes tipos de projeto.
+            Olá, meu nome é Danilo Machuca. Sou desenvolvedor Front-end e
+            estudante de Ciência da Computação na UNIP. Trabalho com HTML, CSS,
+            JavaScript, React, TypeScript e Next.js, criando interfaces
+            modernas, responsivas e bem estruturadas. Tenho interesse em
+            expandir meu conhecimento técnico e explorar novas tecnologias para
+            desenvolver aplicações cada vez mais completas e eficientes,
+            entregando uma experiência de uso de alta qualidade.
           </p>
         </>
       </Section>
@@ -47,13 +47,11 @@ function App() {
         <>
           <Title fontSize={24}>Como eu Trabalho</Title>
           <p>
-            Como desenvolvedor, priorizo performance, acessibilidade e código
-            limpo em todas as camadas da aplicação. Desenvolvo e integro APIs,
-            aplico boas práticas de arquitetura e manutenção de software e
+            Nos meus projetos, priorizo performance, acessibilidade e código
+            limpo. Integro APIs REST, aplico boas práticas de desenvolvimento e
             utilizo testes automatizados com Jest e Cypress para garantir
-            estabilidade e confiabilidade. Meu foco é entregar soluções
-            completas, eficientes para o cliente e com uma experiência agradável
-            para o usuário final.
+            estabilidade e confiabilidade. Busco sempre criar aplicações que
+            sejam eficientes para o cliente e agradáveis para o usuário final.
           </p>
         </>
       </Section>

@@ -8,11 +8,11 @@ O objetivo é centralizar minhas informações profissionais e oferecer uma form
 O site é dividido em **quatro seções principais**:
 
 1. **Sobre Mim**
-   Apresento minha formação e minhas stacks, destacando meu perfil como desenvolvedor Full-Stack.
+   Apresento minha formação e minhas stacks, destacando meu perfil como desenvolvedor Front-end.
    **Exemplo de texto:**
 
-   > Olá, meu nome é Danilo Machuca. Sou desenvolvedor Full-Stack e estudante de Ciência da Computação na UNIP.
-   > Tenho conhecimento em HTML, CSS, JavaScript, React, TypeScript, Next.js, Go, Python, Node, C e C++, o que me permite atuar em diferentes camadas de uma aplicação.
+   > Olá, meu nome é Danilo Machuca. Sou desenvolvedor Front-end e estudante de Ciência da Computação na UNIP.
+   > Tenho conhecimento em HTML, CSS, JavaScript, React, TypeScript, Next.js, o que me permite atuar em diferentes camadas de uma aplicação.
    > Estou sempre explorando novas tecnologias para ampliar meu repertório técnico e criar soluções completas e eficientes.
 
 2. **Como Eu Trabalho**
